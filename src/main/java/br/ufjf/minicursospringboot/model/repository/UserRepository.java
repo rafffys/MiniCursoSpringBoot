@@ -16,4 +16,6 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 	@SuppressWarnings("unchecked")
 	public User save(User user);
 	
+	public User findByEmail(String email);
+	
 }
